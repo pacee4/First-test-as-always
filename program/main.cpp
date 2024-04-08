@@ -27,22 +27,22 @@ public:
     int displayResult() {
         switch (result) {
         case 1:
-            std::cout << "Îäèí" << std::endl;
+            std::cout << "ÃŽÃ¤Ã¨Ã­" << std::endl;
             break;
         case 2:
-            std::cout << "Äâà" << std::endl;
+            std::cout << "Ã„Ã¢Ã " << std::endl;
             break;
         case 3:
-            std::cout << "Òðè" << std::endl;
+            std::cout << "Ã’Ã°Ã¨" << std::endl;
             break;
         case 4:
-            std::cout << "×åòûðå" << std::endl;
+            std::cout << "Ã—Ã¥Ã²Ã»Ã°Ã¥" << std::endl;
             break;
         case 5:
-            std::cout << "Ïÿòü" << std::endl;
+            std::cout << "ÃÃ¿Ã²Ã¼" << std::endl;
             break;
         case 6:
-            std::cout << "Øåñòü" << std::endl;
+            std::cout << "Ã˜Ã¥Ã±Ã²Ã¼" << std::endl;
             break;
         default:
             std::cout << "Invalid result" << std::endl;
@@ -54,6 +54,7 @@ public:
 int main() {
     setlocale(LC_ALL, "ru");
     DiceRoll res;
+    res.roll();
     int result = res.displayResult(); // 1 2 3 4 5 6 
     Characteristics playerStats;
     playerStats.power = result;
